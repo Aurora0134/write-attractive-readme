@@ -60,3 +60,5 @@ gh api repos/<owner>/<repo> --jq '{license: .license.spdx_id, stars: .stargazers
 gh api repos/<owner>/<repo>/readme -H "Accept: application/vnd.github.html" | grep -c 'user-content-'
 ```
 注意：HTML 变体的响应是原始 HTML 不是 JSON，`--jq '.content'` 会失败；GitHub 渲染后的锚点 id 全部带 `user-content-` 前缀，比对死链时先剥掉。
+
+**许可证要在页头上亮出来，LICENSE 就必须是纯模板。** GitHub 的识别器按 canonical 文本做近似匹配，只容忍版权行变化 —— 往里塞「样本归属说明」这类额外段落，`.license.spdx_id` 立刻变成 `NOASSERTION`，页面上显示 Unknown license，README 里那句 MIT 就成了口说无凭。归属、第三方声明一律写进 README 或单独一节，别写进 LICENSE。改完用 `gh api repos/<owner>/<repo> --jq .license.spdx_id` 复验，别凭肉眼。

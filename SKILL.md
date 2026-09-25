@@ -1,6 +1,6 @@
 ---
 name: write-attractive-readme
-description: 按花叔（GitHub: alchaincyf）高 star 项目的实测套路写/重写/审查开源仓库 README，产出能拿 star 又经得起复算的中文 README。凡用户说「写个有吸引力的 README」「照花叔风格写」「这个 README 不够抓人」「开源这个项目顺便写 README」「README 太干/帮我改首页」「上线前审一遍 README」，或已写完 README 要做发布前检查时使用。适用对象：Agent Skill、CLI/库、HTML 单文件工具、小型开源项目，尤其是 0 star、无 GIF、无 demo 站、无账号露出需求的新仓库。不用于 API 参考文档、内部 wiki、CHANGELOG，也不用于已有真实动图画廊与 live demo 的成熟项目（那类直接按 references/formula.md 的完整档补节即可）。
+description: "按花叔（GitHub: alchaincyf）高 star 项目的实测套路写/重写/审查开源仓库 README，产出能拿 star 又经得起复算的中文 README。凡用户说「写个有吸引力的 README」「照花叔风格写」「这个 README 不够抓人」「开源这个项目顺便写 README」「README 太干/帮我改首页」「上线前审一遍 README」，或已写完 README 要做发布前检查时使用。适用对象：Agent Skill、CLI/库、HTML 单文件工具、小型开源项目，尤其是 0 star、无 GIF、无 demo 站、无账号露出需求的新仓库。不用于 API 参考文档、内部 wiki、CHANGELOG，也不用于已有真实动图画廊与 live demo 的成熟项目（那类直接按 references/formula.md 的完整档补节即可）。"
 ---
 
 # 写有吸引力的 README（花叔风格）
